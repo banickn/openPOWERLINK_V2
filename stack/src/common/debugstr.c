@@ -885,6 +885,7 @@ const char* debugstr_getRetValStr(tOplkError oplkError_p)
         if (retValInfo_l[i].key == oplkError_p)
             return retValInfo_l[i].sName;
     }
+    printf("some change");
 
     return invalidStr_l;
 }

@@ -39,7 +39,7 @@ compiler:
 env:
   global:
     - GIT_COMMIT=$TRAVIS_COMMIT
-    - VERA_ROOT=/home/travis/build/OpenAutomationTechnologies/openPOWERLINK_V2/tools/checkstyle/.vera++/
+    - VERA_ROOT=/home/travis/build/banickn/openPOWERLINK_V2/tools/checkstyle/.vera++/
 
 addons:
   apt:

@@ -232,7 +232,7 @@ tOplkError ledk_process(void)
     tOplkError      ret;
 
     ret = ledk_updateLedState();
-    printf("test\n");
+    printf("test2\n");
     return ret;
 }
 
