@@ -135,7 +135,7 @@ tOplkError eventkcal_init(void)
     sem_unlink("/semUserEvent");
     sem_unlink("/semKernelEvent");
 
-    if ((instance_l.semUserData = sem_open("/semUserEvent", O_CREAT | O_RDWR, S_IRWXG, 0)) == SEM_FAILED)
+    if((instance_l.semUserData = sem_open("/semUserEvent", O_CREAT | O_RDWR, S_IRWXG, 0)) == SEM_FAILED)
         goto Exit;
 
     if ((instance_l.semKernelData = sem_open("/semKernelEvent", O_CREAT | O_RDWR, S_IRWXG, 0)) == SEM_FAILED)
